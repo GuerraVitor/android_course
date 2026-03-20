@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">App01_contaPessoas</string>
+    <string name="RESET">RESET</string>
+    <string name="TextTotal">0</string>
+    <string name="TextBoy">0</string>
+    <string name="TextGirl">0</string>
+</resources>
