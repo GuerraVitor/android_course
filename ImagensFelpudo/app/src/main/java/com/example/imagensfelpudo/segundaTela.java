@@ -1,6 +1,7 @@
 package com.example.imagensfelpudo;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +21,12 @@ public class segundaTela extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Bundle extras = getIntent().getExtras();
+
+        if(extras != null){
+            String texto = extras.getString("nome");
+            Toast.makeText(this, ""+ texto, Toast.LENGTH_SHORT).show();
+        }
     }
 }

@@ -28,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
     public void clicou(View view) {
         Toast.makeText(this, "Clicou!", Toast.LENGTH_SHORT).show();
         Intent intent = new Intent(MainActivity.this, segundaTela.class);
+        intent.putExtra("nome", "Vitor Guerra");
         startActivity(intent);
     }
 }
